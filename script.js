@@ -1,5 +1,14 @@
 function fibonacci(num) {
-// your code here
+  if (num === 0) {
+    return 0;
+  } else if (num === 1) {
+    return 1;
+  } else {
+    return fibonacci(num - 1) + fibonacci(num - 2);
+  }
 }
+
+// Example usage:
+console.log(fibonacci(7)); // Outputs: 13
 
 module.exports = fibonacci;
